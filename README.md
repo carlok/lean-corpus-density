@@ -1,0 +1,96 @@
+# lean-corpus-density
+
+Measuring how much Lean 4 libraries depend on themselves.
+
+Three Lean 4 libraries now exist that are written by machines and sit
+downstream of Mathlib. They differ in how much human judgement sits between a
+generated theorem and the library. This repository measures their import
+graphs, and Mathlib's, to ask whether machine-generated mathematics accumulates
+— whether later results build on earlier machine-generated ones.
+
+Measured 20 August 2026.
+
+## Summary
+
+Raw density is not comparable across corpora of different sizes: under uniform
+sampling internal edges scale as E·(k/N)², so per-module density is roughly
+linear in corpus size. Subsampling a large library does not fix this, because a
+subsample is a fragment rather than a small library — the nodes survive and
+every edge routed through an undrawn module is lost.
+
+Replaying a library's own history avoids the problem. Tau Ceti has 3440 commits
+since 2 June 2026, so its state at 10, 24, 99 modules is directly observable.
+Its density rises monotonically from 0.40 to 1.55 internal imports per module
+between 10 and 2314 modules, and its most-reused module goes from an in-degree
+of 2 to 26. Machine-generated mathematics accumulates there, at an increasing
+rate.
+
+At a matched 24 modules, Tau Ceti has 22 internal edges and LeanFrontier has 4
+(p = 2.7×10⁻⁴ per module). Normalising by declaration rather than by module
+reduces the gap to 2.20× and it is then no longer established: 95% CI
+[0.75×, 8.80×], p = 0.096. Per module the difference holds; per declaration the
+counts are too small to carry it. File granularity does not explain the gap —
+Tau Ceti's modules are the larger ones, 20.2 declarations against 8.1.
+
+Tau Ceti is directed by human-written roadmaps, and a roadmap specifies a
+dependency graph in advance, so this does not show that machine-generated
+mathematics accumulates unaided. Mathlib's density likewise reflects an
+enforced import-minimization effort, not authorship alone.
+
+| Corpus | modules | internal edges | per module |
+|---|---|---|---|
+| Mathlib `v4.33.0-rc1` | 8268 | 25872 | 3.13 |
+| merely-true | 41 | 94 | 2.29 |
+| Tau Ceti | 2774 | 4518 | 1.63 |
+| LeanFrontier | 24 | 4 | 0.17 |
+
+Those four numbers are the ones that should *not* be compared directly. They
+are here because they are what a naive reading produces.
+
+## Method
+
+Direct `import` lines, read from file headers. No Lean toolchain and no build,
+so the scripts run against any checkout at any toolchain version.
+
+- **Direct imports, not transitive closure.** Through the foundations every
+  module reaches every other one and closure density carries no information.
+- **Comments are stripped first.** A wrapped comment line beginning with the
+  word "import" otherwise reads as an edge.
+- **Lean 4.34's module system matters.** Tau Ceti and current Mathlib write
+  `public import` and `meta import`; a `^import` scan misses 76% of Tau Ceti's
+  files and reports a library with almost no structure.
+
+## Running it
+
+```sh
+./clone.sh
+python3 tools/import_graph.py <mathlib-checkout> Mathlib --json-out data/mathlib.json
+python3 tools/import_graph.py corpora/TauCeti TauCeti --json-out data/tauceti.json
+python3 tools/null_model.py data/leanfrontier.json data/mathlib.json
+```
+
+Python standard library only. Mathlib is not cloned by `clone.sh`: pass an
+existing checkout. Record the toolchain version alongside any numbers, since
+the module system changed the import syntax.
+
+- `tools/import_graph.py` — build a corpus's direct import graph
+- `tools/null_model.py` — subject-matched null (retained; see the caveat above)
+- `tools/subsample.py` — matched-size draws, scattered and concentrated
+- `data/tauceti_growth.csv` — Tau Ceti's density by replay of its history
+
+## Corpora
+
+- [Mathlib](https://github.com/leanprover-community/mathlib4)
+- [Tau Ceti](https://github.com/TauCetiProject/TauCeti)
+- [merely-true](https://github.com/merely-true/merely-true) — 41 modules, 34 in
+  one directory; one project rather than a library, and not comparable at these
+  sizes
+- [LeanFrontier](https://github.com/carlok/LeanFrontier)
+
+## Note
+
+This analysis was carried out with an AI assistant. The numbers are
+reproducible from the scripts above against public checkouts, which is the
+intended basis for trusting or refuting any of it.
+
+Apache 2.0.

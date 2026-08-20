@@ -1,3 +1,4 @@
 # Upstream corpora are cloned, never vendored: clone.sh reproduces them.
 corpora/
 __pycache__/
+notes/
