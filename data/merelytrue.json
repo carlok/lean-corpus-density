@@ -1,0 +1,256 @@
+{
+ "graph": {
+  "MerelyTrue.Basic": [],
+  "MerelyTrue.BinomialAdd": [
+   "Mathlib.Probability.ProbabilityMassFunction.Binomial",
+   "Mathlib.Data.Nat.Choose.Vandermonde"
+  ],
+  "MerelyTrue.BinomialAddCorollaries": [
+   "MerelyTrue.BinomialAdd"
+  ],
+  "MerelyTrue.ForwardEuler": [
+   "Mathlib.Analysis.ODE.Gronwall"
+  ],
+  "MerelyTrue.Landau.CoulombConcreteTheorem42": [
+   "MerelyTrue.Landau.CoulombSpatialTransport",
+   "MerelyTrue.Landau.CoulombFluxBound",
+   "MerelyTrue.Landau.CoulombPSD",
+   "MerelyTrue.Landau.CoulombFluxDiff",
+   "MerelyTrue.Landau.IteratedDerivHelpers",
+   "MerelyTrue.Landau.LogBoundHelpers"
+  ],
+  "MerelyTrue.Landau.CoulombFlux": [
+   "MerelyTrue.Landau.NewtonianPotential",
+   "Mathlib.MeasureTheory.SpecificCodomains.Pi"
+  ],
+  "MerelyTrue.Landau.CoulombFluxBound": [
+   "MerelyTrue.Landau.CoulombFlux"
+  ],
+  "MerelyTrue.Landau.CoulombFluxConv": [
+   "MerelyTrue.Landau.CoulombFlux",
+   "Mathlib.Analysis.Calculus.ParametricIntegral"
+  ],
+  "MerelyTrue.Landau.CoulombFluxDiff": [
+   "MerelyTrue.Landau.CoulombFluxConv"
+  ],
+  "MerelyTrue.Landau.CoulombForceTransport": [
+   "MerelyTrue.Landau.CoulombKernel",
+   "MerelyTrue.Landau.VelocityDecayInstance"
+  ],
+  "MerelyTrue.Landau.CoulombKernel": [
+   "MerelyTrue.Landau.SchwartzDecayDefs"
+  ],
+  "MerelyTrue.Landau.CoulombNonvacuous": [
+   "MerelyTrue.Landau.CoulombConcreteTheorem42"
+  ],
+  "MerelyTrue.Landau.CoulombPSD": [
+   "MerelyTrue.Landau.CoulombPSDHelpers"
+  ],
+  "MerelyTrue.Landau.CoulombPSDHelpers": [
+   "MerelyTrue.Landau.CoulombFlux"
+  ],
+  "MerelyTrue.Landau.CoulombSpatialTransport": [
+   "MerelyTrue.Landau.CoulombForceTransport"
+  ],
+  "MerelyTrue.Landau.Defs": [
+   "Mathlib.Data.Real.StarOrdered",
+   "Mathlib.Analysis.Calculus.LineDeriv.IntegrationByParts"
+  ],
+  "MerelyTrue.Landau.FlatTorus3Lemmas": [
+   "MerelyTrue.Landau.Defs"
+  ],
+  "MerelyTrue.Landau.GaussianHelpers": [
+   "MerelyTrue.Landau.Defs",
+   "Mathlib.MeasureTheory.Integral.Pi",
+   "Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral",
+   "Mathlib.Analysis.Calculus.FDeriv.Symmetric",
+   "Mathlib.Analysis.Calculus.ContDiff.Bounds"
+  ],
+  "MerelyTrue.Landau.IteratedDerivHelpers": [
+   "MerelyTrue.Landau.Defs",
+   "Mathlib.Analysis.Calculus.ContDiff.Bounds"
+  ],
+  "MerelyTrue.Landau.LogBoundHelpers": [
+   "Mathlib",
+   "MerelyTrue.Landau.Defs",
+   "MerelyTrue.Landau.TorusDefs",
+   "MerelyTrue.Landau.TorusInstance"
+  ],
+  "MerelyTrue.Landau.NewtonianPotential": [
+   "MerelyTrue.Landau.CoulombKernel",
+   "Mathlib.Analysis.SpecialFunctions.Log.Base"
+  ],
+  "MerelyTrue.Landau.SchwartzDecayDefs": [
+   "MerelyTrue.Landau.Theorem42",
+   "MerelyTrue.Landau.TorusInstance",
+   "MerelyTrue.Landau.IteratedDerivHelpers"
+  ],
+  "MerelyTrue.Landau.Section2": [
+   "MerelyTrue.Landau.Defs"
+  ],
+  "MerelyTrue.Landau.Section3": [
+   "MerelyTrue.Landau.Section3Helpers",
+   "MerelyTrue.Landau.Section3Helpers2"
+  ],
+  "MerelyTrue.Landau.Section3Helpers": [
+   "MerelyTrue.Landau.Defs",
+   "MerelyTrue.Landau.Section2",
+   "MerelyTrue.Landau.GaussianHelpers",
+   "Mathlib.MeasureTheory.Integral.Pi",
+   "Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral",
+   "Mathlib.Analysis.Calculus.FDeriv.Symmetric",
+   "Mathlib.Analysis.Calculus.ContDiff.Bounds"
+  ],
+  "MerelyTrue.Landau.Section3Helpers2": [
+   "MerelyTrue.Landau.Section3Helpers"
+  ],
+  "MerelyTrue.Landau.Section4": [
+   "MerelyTrue.Landau.Defs",
+   "MerelyTrue.Landau.FlatTorus3Lemmas",
+   "MerelyTrue.Landau.Section3"
+  ],
+  "MerelyTrue.Landau.Section5": [
+   "MerelyTrue.Landau.Defs",
+   "MerelyTrue.Landau.Section3"
+  ],
+  "MerelyTrue.Landau.Section6": [
+   "MerelyTrue.Landau.VMLStructures",
+   "MerelyTrue.Landau.FlatTorus3Lemmas"
+  ],
+  "MerelyTrue.Landau.Section7": [
+   "MerelyTrue.Landau.VMLStructures",
+   "MerelyTrue.Landau.Section3",
+   "MerelyTrue.Landau.Section6"
+  ],
+  "MerelyTrue.Landau.Section8": [
+   "MerelyTrue.Landau.VMLStructures",
+   "MerelyTrue.Landau.Section6"
+  ],
+  "MerelyTrue.Landau.Theorem42": [
+   "MerelyTrue.Landau.VMLInputDerive"
+  ],
+  "MerelyTrue.Landau.TorusDefs": [
+   "MerelyTrue.Landau.Defs",
+   "Mathlib.MeasureTheory.Integral.IntervalIntegral.Periodic",
+   "Mathlib.Analysis.Calculus.FDeriv.Symmetric"
+  ],
+  "MerelyTrue.Landau.TorusInstance": [
+   "MerelyTrue.Landau.TorusIntegration",
+   "Mathlib.Analysis.Calculus.ContDiff.FiniteDimension"
+  ],
+  "MerelyTrue.Landau.TorusIntegration": [
+   "MerelyTrue.Landau.TorusDefs"
+  ],
+  "MerelyTrue.Landau.VMLInputDerive": [
+   "MerelyTrue.Landau.VMLStructures",
+   "MerelyTrue.Landau.Section3",
+   "MerelyTrue.Landau.Section4",
+   "MerelyTrue.Landau.Section5",
+   "MerelyTrue.Landau.Section6",
+   "MerelyTrue.Landau.Section7",
+   "MerelyTrue.Landau.Section8"
+  ],
+  "MerelyTrue.Landau.VMLStructures": [
+   "MerelyTrue.Landau.Defs"
+  ],
+  "MerelyTrue.Landau.VelocityDecayInstance": [
+   "MerelyTrue.Landau.Defs"
+  ],
+  "MerelyTrue.Landau": [
+   "MerelyTrue.Landau.Defs",
+   "MerelyTrue.Landau.VMLStructures",
+   "MerelyTrue.Landau.SchwartzDecayDefs",
+   "MerelyTrue.Landau.FlatTorus3Lemmas",
+   "MerelyTrue.Landau.TorusDefs",
+   "MerelyTrue.Landau.TorusInstance",
+   "MerelyTrue.Landau.TorusIntegration",
+   "MerelyTrue.Landau.GaussianHelpers",
+   "MerelyTrue.Landau.IteratedDerivHelpers",
+   "MerelyTrue.Landau.LogBoundHelpers",
+   "MerelyTrue.Landau.NewtonianPotential",
+   "MerelyTrue.Landau.Section3Helpers",
+   "MerelyTrue.Landau.Section3Helpers2",
+   "MerelyTrue.Landau.Section2",
+   "MerelyTrue.Landau.Section3",
+   "MerelyTrue.Landau.Section4",
+   "MerelyTrue.Landau.Section5",
+   "MerelyTrue.Landau.Section6",
+   "MerelyTrue.Landau.Section7",
+   "MerelyTrue.Landau.Section8",
+   "MerelyTrue.Landau.VMLInputDerive",
+   "MerelyTrue.Landau.Theorem42",
+   "MerelyTrue.Landau.CoulombKernel",
+   "MerelyTrue.Landau.CoulombFlux",
+   "MerelyTrue.Landau.CoulombFluxConv",
+   "MerelyTrue.Landau.CoulombFluxDiff",
+   "MerelyTrue.Landau.CoulombFluxBound",
+   "MerelyTrue.Landau.CoulombPSDHelpers",
+   "MerelyTrue.Landau.CoulombPSD",
+   "MerelyTrue.Landau.CoulombForceTransport",
+   "MerelyTrue.Landau.CoulombSpatialTransport",
+   "MerelyTrue.Landau.VelocityDecayInstance",
+   "MerelyTrue.Landau.CoulombConcreteTheorem42",
+   "MerelyTrue.Landau.CoulombNonvacuous"
+  ],
+  "MerelyTrue.ProblemFourteen": [
+   "Mathlib"
+  ],
+  "MerelyTrue.Wardrop": [
+   "Mathlib.Algebra.Order.BigOperators.Group.Finset",
+   "Mathlib.Data.Finset.Max",
+   "Mathlib.Data.Real.Basic",
+   "Mathlib.Tactic"
+  ]
+ },
+ "summary": {
+  "modules": 41,
+  "internal_edges": 94,
+  "external_edges": 26,
+  "internal_per_module": 2.2927,
+  "isolated_from_corpus": 6,
+  "max_in_degree": 12,
+  "reused_modules": 35,
+  "top_in_degree": [
+   [
+    "MerelyTrue.Landau.Defs",
+    12
+   ],
+   [
+    "MerelyTrue.Landau.Section3",
+    5
+   ],
+   [
+    "MerelyTrue.Landau.VMLStructures",
+    5
+   ],
+   [
+    "MerelyTrue.Landau.CoulombFlux",
+    4
+   ],
+   [
+    "MerelyTrue.Landau.Section6",
+    4
+   ],
+   [
+    "MerelyTrue.Landau.CoulombKernel",
+    3
+   ],
+   [
+    "MerelyTrue.Landau.FlatTorus3Lemmas",
+    3
+   ],
+   [
+    "MerelyTrue.Landau.IteratedDerivHelpers",
+    3
+   ],
+   [
+    "MerelyTrue.Landau.Section3Helpers",
+    3
+   ],
+   [
+    "MerelyTrue.Landau.TorusDefs",
+    3
+   ]
+  ]
+ }
+}

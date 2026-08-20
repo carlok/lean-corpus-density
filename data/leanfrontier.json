@@ -1,0 +1,163 @@
+{
+ "graph": {
+  "LeanFrontier.Algebra.Binomial": [
+   "Mathlib.Algebra.Ring.Defs",
+   "Mathlib.Tactic.Ring"
+  ],
+  "LeanFrontier.Analysis.FibonacciReciprocal": [
+   "Mathlib.Analysis.SpecificLimits.Basic",
+   "Mathlib.Data.Nat.Fib.Basic",
+   "Mathlib.Topology.Algebra.InfiniteSum.NatInt"
+  ],
+  "LeanFrontier.Analysis.SlopeMinorant.Constraints": [
+   "LeanFrontier.Analysis.SlopeMinorant"
+  ],
+  "LeanFrontier.Analysis.SlopeMinorant": [
+   "Mathlib.Data.Finset.Lattice.Fold",
+   "Mathlib.Data.Real.Basic",
+   "Mathlib.Tactic.Linarith",
+   "Mathlib.Tactic.Ring"
+  ],
+  "LeanFrontier.Combinatorics.FibonacciComposition": [
+   "Mathlib.Data.Finset.Image",
+   "Mathlib.Data.Nat.Fib.Basic"
+  ],
+  "LeanFrontier.Combinatorics.Josephus.OneIndexed": [
+   "LeanFrontier.Combinatorics.Josephus",
+   "Mathlib.Algebra.Ring.Parity",
+   "Mathlib.Data.Nat.Log"
+  ],
+  "LeanFrontier.Combinatorics.Josephus": [
+   "Mathlib.Data.Nat.Log"
+  ],
+  "LeanFrontier.Dynamics.LogisticMap": [
+   "Mathlib.Analysis.Complex.Trigonometric",
+   "Mathlib.Analysis.Real.Sqrt",
+   "Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic",
+   "Mathlib.Dynamics.PeriodicPts.Defs",
+   "Mathlib.Tactic.LinearCombination"
+  ],
+  "LeanFrontier.Geometry.InversiveGeometry": [
+   "Mathlib.Data.Complex.Basic",
+   "Mathlib.Tactic.LinearCombination"
+  ],
+  "LeanFrontier.GroupTheory.ChangeRinging": [
+   "Mathlib.Data.List.Chain",
+   "Mathlib.Data.List.Perm.Basic",
+   "Mathlib.Data.List.Permutation",
+   "Mathlib.Data.Nat.Factorial.Basic"
+  ],
+  "LeanFrontier.LinearAlgebra.FibonacciMatrix": [
+   "Mathlib.Data.Nat.Fib.Basic",
+   "Mathlib.LinearAlgebra.Matrix.Determinant.Basic",
+   "Mathlib.LinearAlgebra.Matrix.NonsingularInverse",
+   "Mathlib.LinearAlgebra.Matrix.Notation",
+   "Mathlib.LinearAlgebra.Matrix.Trace",
+   "Mathlib.Tactic.FinCases",
+   "Mathlib.Tactic.NormNum"
+  ],
+  "LeanFrontier.NumberTheory.DescartesCircle": [
+   "Mathlib.Algebra.GroupWithZero.Defs",
+   "Mathlib.Algebra.Ring.Basic",
+   "Mathlib.Tactic.LinearCombination",
+   "Mathlib.Tactic.NormNum",
+   "Mathlib.Tactic.Ring"
+  ],
+  "LeanFrontier.NumberTheory.Farey": [
+   "LeanFrontier.NumberTheory.Mediant",
+   "Mathlib.Algebra.GroupWithZero.Defs",
+   "Mathlib.Tactic.Linarith",
+   "Mathlib.Tactic.LinearCombination"
+  ],
+  "LeanFrontier.NumberTheory.FordCircle": [
+   "LeanFrontier.NumberTheory.Mediant",
+   "Mathlib.Algebra.Order.Field.Basic",
+   "Mathlib.Tactic.FieldSimp",
+   "Mathlib.Tactic.Positivity",
+   "Mathlib.Tactic.Ring"
+  ],
+  "LeanFrontier.NumberTheory.HoradamSequence": [
+   "Mathlib.Algebra.Group.Defs",
+   "Mathlib.Algebra.Ring.Basic",
+   "Mathlib.Data.Nat.Init",
+   "Mathlib.Tactic.LinearCombination",
+   "Mathlib.Tactic.Ring"
+  ],
+  "LeanFrontier.NumberTheory.LucasNumber": [
+   "Mathlib.Algebra.BigOperators.Group.Finset.Basic",
+   "Mathlib.Data.Nat.Fib.Basic",
+   "Mathlib.Tactic.LinearCombination",
+   "Mathlib.Tactic.NormNum",
+   "Mathlib.Tactic.Ring"
+  ],
+  "LeanFrontier.NumberTheory.MarkovEquation": [
+   "Mathlib.Tactic.Linarith",
+   "Mathlib.Tactic.LinearCombination",
+   "Mathlib.Tactic.NormNum",
+   "Mathlib.Tactic.Ring"
+  ],
+  "LeanFrontier.NumberTheory.Mediant": [
+   "Mathlib.Algebra.Order.Field.Basic",
+   "Mathlib.Algebra.Order.GroupWithZero.Basic",
+   "Mathlib.RingTheory.Coprime.Basic",
+   "Mathlib.Tactic.Linarith",
+   "Mathlib.Tactic.LinearCombination",
+   "Mathlib.Tactic.Ring"
+  ],
+  "LeanFrontier.NumberTheory.PowerSums": [
+   "Mathlib.Algebra.BigOperators.Group.Finset.Basic",
+   "Mathlib.Algebra.BigOperators.Intervals",
+   "Mathlib.Tactic.Ring"
+  ],
+  "LeanFrontier.NumberTheory.SternDiatomic": [
+   "Mathlib.Data.Nat.GCD.Basic",
+   "Mathlib.Algebra.Group.Even",
+   "Mathlib.Tactic.Ring"
+  ],
+  "LeanFrontier.NumberTheory.SylvesterSequence": [
+   "Mathlib.Algebra.BigOperators.Group.Finset.Basic",
+   "Mathlib.Algebra.BigOperators.Group.Finset.Piecewise",
+   "Mathlib.Algebra.Field.Basic",
+   "Mathlib.Data.Nat.Cast.Field",
+   "Mathlib.Data.Nat.GCD.Basic",
+   "Mathlib.Tactic.FieldSimp",
+   "Mathlib.Tactic.Ring"
+  ],
+  "LeanFrontier.NumberTheory.Transcendental.HermiteLindemann": [
+   "Mathlib.Analysis.SpecialFunctions.Complex.Log",
+   "Mathlib.RingTheory.Algebraic.Integral"
+  ],
+  "LeanFrontier.RepresentationTheory.FiniteGroupCharacter": [
+   "Mathlib.Algebra.BigOperators.Ring.Finset",
+   "Mathlib.Algebra.Group.Units.Equiv"
+  ],
+  "LeanFrontier.Topology.Furstenberg": [
+   "Mathlib.Data.Set.Finite.Basic",
+   "Mathlib.RingTheory.Int.Basic",
+   "Mathlib.Topology.Bases"
+  ]
+ },
+ "summary": {
+  "modules": 24,
+  "internal_edges": 4,
+  "external_edges": 84,
+  "internal_per_module": 0.1667,
+  "isolated_from_corpus": 20,
+  "max_in_degree": 2,
+  "reused_modules": 3,
+  "top_in_degree": [
+   [
+    "LeanFrontier.NumberTheory.Mediant",
+    2
+   ],
+   [
+    "LeanFrontier.Analysis.SlopeMinorant",
+    1
+   ],
+   [
+    "LeanFrontier.Combinatorics.Josephus",
+    1
+   ]
+  ]
+ }
+}

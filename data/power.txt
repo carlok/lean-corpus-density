@@ -1,0 +1,18 @@
+LeanFrontier observed rate: 0.0206 edges/declaration (8.1 decl/module)
+Tau Ceti reference rate:    0.0455 edges/declaration (20.2 decl/module)
+true rate ratio: 2.20x
+
+ submissions  LF edges   power
+          24       4.0    0.42
+          40       6.7    0.66
+          60      10.0    0.81
+          80      13.3    0.89
+         100      16.7    0.94
+         130      21.7    0.99
+         160      26.7    1.00
+         200      33.3    1.00
+         250      41.7    1.00
+         300      50.0    1.00
+         400      66.7    1.00
+
+80% power to detect this effect per declaration is first reached near n = 60
