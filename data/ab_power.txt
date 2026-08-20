@@ -1,0 +1,17 @@
+arm A (control) held at the observed 0.167 edges/module
+Tau Ceti reference: 0.917 edges/module
+
+ n/arm    0.30    0.40    0.50    0.70    0.92
+        B rate  B rate  B rate  B rate  B rate
+    12    0.07    0.09    0.37    0.40    0.87
+    18    0.16    0.16    0.39    0.82    0.93
+    24    0.19    0.37    0.63    0.91    0.99
+    30    0.20    0.41    0.62    0.95    1.00
+    40    0.27    0.64    0.79    0.99    1.00
+    50    0.39    0.71    0.90    1.00    1.00
+    60    0.43    0.72    0.95    1.00    1.00
+
+  to detect arm B at 0.40 edges/module (=2.4x control): n = 65 per arm, 130 total
+  to detect arm B at 0.50 edges/module (=3.0x control): n = 34 per arm, 68 total
+  to detect arm B at 0.70 edges/module (=4.2x control): n = 18 per arm, 36 total
+  to detect arm B at 0.92 edges/module (=5.5x control): n = 12 per arm, 24 total
